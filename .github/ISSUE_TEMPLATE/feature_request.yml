@@ -1,0 +1,48 @@
+name: Feature request
+description: Suggest an improvement or a new platform
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the problem first, then the solution you have in mind.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: What are you trying to do that VidGrab makes hard today?
+      placeholder: I often need to ...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How should it behave? Screenshots or mockups are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other tools or workarounds you tried
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Download engine
+        - Platform support
+        - User interface
+        - Cookies / login
+        - Subtitles / metadata
+        - Build / release
+        - Other
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and did not find a duplicate
+          required: true

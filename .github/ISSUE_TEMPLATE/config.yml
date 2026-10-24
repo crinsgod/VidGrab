@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download the latest release
+    url: https://github.com/crinsgod/VidGrab/releases
+    about: Check whether the newest version already fixes your problem.
+  - name: Usage guide
+    url: https://github.com/crinsgod/VidGrab#readme
+    about: Batch download, cookies, settings and troubleshooting.

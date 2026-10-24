@@ -1,0 +1,70 @@
+name: Bug report
+description: Something does not work as expected
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please include the exact link and the app version; both are required to reproduce parsing/download issues.
+  - type: input
+    id: version
+    attributes:
+      label: VidGrab version
+      description: Shown in the window title, e.g. v1.1.0
+      placeholder: v1.1.0
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link that failed
+      description: Paste the exact URL (remove any private tokens if needed)
+      placeholder: https://www.youtube.com/watch?v=...
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - YouTube
+        - TikTok
+        - Douyin
+        - X (Twitter)
+        - Instagram
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened
+      description: Error text from the status bar, and what you expected instead
+      placeholder: |
+        Status bar says: ...
+        Expected: ...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Paste the link
+        2. Click Parse all
+        3. ...
+  - type: input
+    id: os
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 23H2
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I am using the latest release
+          required: true
+        - label: I searched existing issues and did not find a duplicate
+          required: true
