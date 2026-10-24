@@ -1,0 +1,16 @@
+# Build output
+build/
+dist/
+*.deflate
+*.bin
+*.zip
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+
+# Local data
+cookies.txt
+*.log
